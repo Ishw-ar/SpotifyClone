@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpotifyClone">
+        <activity android:name=".PlayMusicActivity"></activity>
+        <activity android:name=".BottonNavigationViewActivity" />
+        <activity android:name=".DateOfBirthActivity" />
+        <activity android:name=".GenderActivity" />
+        <activity android:name=".NameActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".OTPActivity" />
+        <activity android:name=".PhoneNumberActivity" />
+        <activity android:name=".MilionsOfSong" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
