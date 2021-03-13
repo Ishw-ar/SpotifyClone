@@ -16,9 +16,11 @@ public class ParentRecyclerViewAdapter extends RecyclerView.Adapter<ParentRecycl
 
 
     private ArrayList<ParentModel> parentModelArrayList;
+    private ItemClickListener itemClickListener;
 
-    public ParentRecyclerViewAdapter(ArrayList<ParentModel> parentModelArrayList) {
+    public ParentRecyclerViewAdapter(ArrayList<ParentModel> parentModelArrayList,ItemClickListener itemClickListener) {
         this.parentModelArrayList = parentModelArrayList;
+        this.itemClickListener=itemClickListener;
     }
 
     public Context cxt;
@@ -29,17 +31,20 @@ public class ParentRecyclerViewAdapter extends RecyclerView.Adapter<ParentRecycl
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView category;
         public RecyclerView childRecyclerView;
+       // public ItemClickListener itemClickListener;
 
         public MyViewHolder(View itemView) {
             super(itemView);
+           // this.itemClickListener=itemClickListener;
 
             category = itemView.findViewById(R.id.Song_Category);
-            childRecyclerView = itemView.findViewById(R.id.Child_RV);
+           childRecyclerView = itemView.findViewById(R.id.Child_RV);
         }
     }
 
     public ParentRecyclerViewAdapter(ArrayList<ParentModel> exampleList, Context context) {
         this.parentModelArrayList = exampleList;
+       // this.itemClickListener=itemClickListener;
         this.cxt = context;
 
     }

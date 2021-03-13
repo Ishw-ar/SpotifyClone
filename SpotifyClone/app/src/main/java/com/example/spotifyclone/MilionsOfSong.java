@@ -34,7 +34,7 @@ public class MilionsOfSong extends AppCompatActivity {
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent intent = new Intent(MilionsOfSong.this, SignUpActivity.class);
+               Intent intent = new Intent(MilionsOfSong.this, PlayMusicActivity.class);
                startActivity(intent);
 
                 }

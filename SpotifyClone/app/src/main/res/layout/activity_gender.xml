@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btnFemale"
+        android:id="@+id/btnFeamle2"
         android:layout_width="110dp"
         android:background="@drawable/button_image"
         android:text="Female"
@@ -39,9 +39,9 @@
         android:textColor="@color/white"
         android:layout_height="60dp"/>
     <Button
-        android:id="@+id/btnMale"
+        android:id="@+id/btnMale2"
         android:layout_width="110dp"
-        android:layout_toEndOf="@+id/btnFemale"
+        android:layout_toEndOf="@id/btnFeamle2"
         android:layout_marginStart="20dp"
         android:background="@drawable/button_image"
         android:text="Male"
@@ -49,6 +49,7 @@
         android:layout_marginTop="150dp"
         android:textColor="@color/white"
         android:layout_height="60dp"/>
+
 
 
 </RelativeLayout>

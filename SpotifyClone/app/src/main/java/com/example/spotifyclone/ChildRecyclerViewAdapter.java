@@ -1,6 +1,7 @@
 package com.example.spotifyclone;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,22 +15,37 @@ import java.util.ArrayList;
 
 public class ChildRecyclerViewAdapter extends RecyclerView.Adapter<ChildRecyclerViewAdapter.MyViewHolder> {
     public ArrayList<ChildModel> childModelArrayList;
+
     Context cxt;
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-        public ImageView songImage;
+        public ImageView song_image;
         public TextView songName;
+        private ItemClickListener itemClickListener;
+        //ChildModel childModel =new ChildModel(song_image);
+
 
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            songImage = itemView.findViewById(R.id.Song_image);
+            this.itemClickListener=itemClickListener;
+            song_image = itemView.findViewById(R.id.song_image);
             songName = itemView.findViewById(R.id.Song_name);
+          //  song_image.setImageResource();
 
         }
-    }
+
+      //  @Override
+        //public void onClick(View v) {
+          //  itemClickListener.onItemClicked(songImage);
+
+
+
+        }
+   // }
     public ChildRecyclerViewAdapter(ArrayList<ChildModel> arrayList, Context mContext) {
         this.cxt = mContext;
         this.childModelArrayList = arrayList;
+
     }
 
 
@@ -43,7 +59,7 @@ public class ChildRecyclerViewAdapter extends RecyclerView.Adapter<ChildRecycler
     @Override
     public void onBindViewHolder(@NonNull ChildRecyclerViewAdapter.MyViewHolder holder, int position) {
         ChildModel currentItem = childModelArrayList.get(position);
-        holder.songImage.setImageResource(currentItem.getSong_image());
+        holder.song_image.setImageResource(currentItem.getSong_image());
         holder.songName.setText(currentItem.getSongName());
     }
 

@@ -22,6 +22,8 @@ public class OTPActivity extends AppCompatActivity {
         mBtnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               //
+                // Intent intent=new Intent(OTPActivity.this,GenderActivity.class);
                 Intent intent=new Intent(OTPActivity.this,BottonNavigationViewActivity.class);
                 startActivity(intent);
             }

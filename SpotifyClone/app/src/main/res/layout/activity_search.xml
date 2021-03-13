@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/thousandyear"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnPlaysong"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="150dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_download__7_"
+            android:onClick="play"
+            android:layout_height="70dp"/>
+        <Button
+            android:id="@+id/btnStopSong"
+            android:layout_width="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/btnPlaysong"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_images__2_"
+            android:onClick="stop"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,5 +1,7 @@
 package com.example.spotifyclone;
 
+import android.widget.ImageView;
+
 public class ChildModel {
   // private int songId;
     private  int song_image;
@@ -11,12 +13,14 @@ public class ChildModel {
         //this.songId=songId;
     }
 
-   // public int getSongId() {
+
+    // public int getSongId() {
      //   return songId;
     //}
 
     public int getSong_image() {
-        return song_image;
+        return
+                song_image;
     }
 
     public String getSongName() {
